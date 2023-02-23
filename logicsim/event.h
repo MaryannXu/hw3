@@ -15,9 +15,7 @@ typedef struct EventLess {
                 if (a->time <= b->time){
                     return true;
                 }
-                else {
-                    false;
-                }
+                    return false;
         }
 
 } EventLess;
