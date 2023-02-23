@@ -2,6 +2,7 @@
 #include <fstream>
 #include <functional>
 #include "llrec.h"
+#include "llrec.cpp"
 using namespace std;
 
 /**
@@ -67,7 +68,12 @@ void dealloc(Node* head)
 //   function object struct declarations
 // -----------------------------------------------
 
-
+struct IsOdd
+{
+    bool operator()(int num) {
+        return (num % 2) != 0;
+    }
+};
 
 
 
@@ -86,8 +92,16 @@ int main(int argc, char* argv[])
     print(head);
 
     // Test out your linked list code
+    //Node* temp = llfilter(head, IsOdd());
+    //print(temp);
 
-
+    Node* smaller = nullptr;
+    Node* larger =nullptr;
+    llpivot(head,smaller,larger,5);
+    cout << "Smaller: ";
+    print(smaller);
+    cout << "Larger: ";
+    print(larger);
 
     
     return 0;

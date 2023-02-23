@@ -1,2 +1,11 @@
 *.o
 llrec-test
+.DS_Store
+.vscode/
+hw3_tests/
+llrec-test.dSYM/
+logicsim/logicsim
+logicsim/my_and.png
+logicsim/my_and.uml
+test
+test.dSYM/
