@@ -108,7 +108,7 @@ Event* NotGate::update(uint64_t current_time)
 			state = '1';
 			break;
 		}
-		else if(in == '0')
+		else if(in == '1')
 		{
 			state = '0';
 			break;
