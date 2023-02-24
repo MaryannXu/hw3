@@ -38,8 +38,8 @@ class Or2Gate : public Gate
 class NotGate : public Gate
 {
   public:
-    NotGate(Wire*, Wire*, Wire*);
-    Event* update(uint64_t current_time);
+    NotGate(Wire*, Wire*);
+    Event* update(uint64_t);
 };
 
 #endif
